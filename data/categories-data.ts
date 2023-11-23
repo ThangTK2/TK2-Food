@@ -8,6 +8,7 @@ export const categoriesData = [
   {
     desc: "Juicy, flavorful patties served in a bun with various toppings and condiments.",
     id: "cln3677fn00016uls4vp6dhx1",
+    category: "Pizza",
     imageSrc: "/img/categories/pizza.png",
   },
   {
@@ -46,10 +47,10 @@ export const categoriesData = [
     category: "Steak",
     imageSrc: "/img/categories/steak.png",
   },
-  {
-    desc: "Spicy and vibrant dishes like tacos, burritos, and enchiladas with bold flavors.",
-    id: "cln368eyq00086ulsvtqpi1ur",
-    category: "Vegan",
-    imageSrc: "/img/categories/vegan.png",
-  },
+  // {
+  //   desc: "Spicy and vibrant dishes like tacos, burritos, and enchiladas with bold flavors.",
+  //   id: "cln368eyq00086ulsvtqpi1ur",
+  //   category: "Vegan",
+  //   imageSrc: "/img/categories/vegan.png",
+  // },
 ];

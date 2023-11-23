@@ -32,7 +32,6 @@ const SideBar = () => {
 
   return (
     <DialogComponent isVisible={isSideBarOpen} onClose={onSideBarClose}>
-      
       <div className="flex justify-center pt-2 pb-4 border-b-2">
         <Link href="/" className="outline-none">
           <Image src="/img/logo.png" width={50} height={50} alt="logo" />
