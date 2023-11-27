@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 import CartList from "./CartList";
-// import LocationBtn from "../components/Common/LocationBtn";
+import LocationBtn from "../components/Common/LocationBtn";
 // import { useCartStore } from "@/lib/store";
 // import { User } from "@prisma/client";
 import { FaCartArrowDown } from "react-icons/fa";
@@ -126,7 +126,7 @@ const CartSummary = ({ user }: Props) => {
                 Delivery Address
               </h2>
               <div>
-                {/* <LocationBtn /> */}
+                <LocationBtn />
               </div>
             </div>
           </div>

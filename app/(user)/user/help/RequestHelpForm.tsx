@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { MdOutlineQuestionMark } from "react-icons/md";
 
@@ -11,7 +10,6 @@ const RequestHelpForm = () => {
     "Account Related ",
     "Other",
   ];
-
   const [helpType, SetHelpType] = useState("");
   const [descr, setDescr] = useState("");
 
@@ -25,8 +23,8 @@ const RequestHelpForm = () => {
           <select
             id="helpType"
             className="form-input"
-            onChange={(e) => SetHelpType(e.target.value)}
             value={helpType}
+            onChange={(e) => SetHelpType(e.target.value)}
           >
             {HelpType.map((help) => (
               <option key={help}>{help}</option>
@@ -39,11 +37,9 @@ const RequestHelpForm = () => {
             Describe the issue
           </label>
           <textarea
-            rows={2}
-            className="form-input"
+            rows={2} className="form-input"
             placeholder="Describe the issue here"
-            value={descr}
-            onChange={(e) => setDescr(e.target.value)}
+            value={descr} onChange={(e) => setDescr(e.target.value)}
           ></textarea>
         </div>
       </div>

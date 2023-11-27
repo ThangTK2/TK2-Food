@@ -2,10 +2,8 @@
 import { useState } from "react";
 import { HiBuildingLibrary } from "react-icons/hi2";
 import Image from "next/image";
-
 import { GiScooter } from "react-icons/gi";
 import { FaChevronRight } from "react-icons/fa";
-
 import { HiLocationMarker } from "react-icons/hi";
 import Modal from "@/app/components/Common/Modal";
 import { UserOrderCollected, UserOrderPreparing } from "./ViewUserOrderStatus";

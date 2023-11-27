@@ -3,6 +3,7 @@ import { useSideBarDrawer } from '@/lib/store';
 import Link from 'next/link';
 import React from 'react'
 import { HiBars3, HiOutlineShoppingCart } from "react-icons/hi2";
+import LocationBtn from './LocationBtn';
 
 const Header = () => {
   const {onSideBarOpen} = useSideBarDrawer()
@@ -17,6 +18,7 @@ const Header = () => {
           <HiBars3 size={28} className="cursor-pointer shrink-0" />
         </button>
 
+        <LocationBtn/>
       </div>
 
        {/* Right Area  */}

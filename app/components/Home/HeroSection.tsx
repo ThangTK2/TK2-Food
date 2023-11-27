@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { HiStar } from 'react-icons/hi2'
-// import RestaurantDetailsModal from './RestaurantDetailsModal'
+import RestaurantDetailsModal from './RestaurantDetailsModal'
 
 const HeroSection = () => {
   const bannerImg = "/img/banner.jpg"
@@ -22,8 +22,8 @@ const HeroSection = () => {
             <HiStar />
             <p className="mx-1">5 rating</p>
           </div>
-          <div>More Info
-            {/* <RestaurantDetailsModal/> */}
+          <div>
+            <RestaurantDetailsModal />
           </div>
         </div>
       </div>
