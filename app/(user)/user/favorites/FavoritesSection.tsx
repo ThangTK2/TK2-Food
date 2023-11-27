@@ -15,7 +15,7 @@ type Props = {
 
 const FavoritesSection = ({ user }: Props) => {
 
-  const userEmail = user?.email as string;
+  // const userEmail = user?.email as string;
 
   // const [{ data, fetching: FavsFetch, error: FavsErr }] = useQuery<
   //   GetUserFavoritesQuery,
@@ -34,7 +34,7 @@ const FavoritesSection = ({ user }: Props) => {
   return (
     <Container>
       <div className="mt-6 text-center">
-        <h2 className="text-lg md:text-2xl lg:text-3xl  leading-tight tracking-tight text-gray-600 sm:text-4xl ">
+        <h2 className="text-lg mb-2 md:text-2xl lg:text-3xl leading-tight tracking-tight text-gray-600 sm:text-4xl ">
           My Favorites
         </h2>
         <Link
@@ -49,7 +49,7 @@ const FavoritesSection = ({ user }: Props) => {
         </Link>
       </div>
 
-      <section className="my-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4  gap-8">
+      <section className="my-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {MenuData?.map((favorite) => (
           <FavoriteModal
             key={favorite.id}

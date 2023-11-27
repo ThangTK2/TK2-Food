@@ -11,14 +11,8 @@ type Props = {
 const FavoriteCard = ({ favorite, OpenModal }: Props) => {
   return (
     <div className="flex items-center justify-around shadow-lg p-3 rounded-lg">
-      <div className="w-16 h-16 overflow-hidden  rounded-full">
-        <Image
-          src={favorite.image}
-          alt="logo"
-          width={70}
-          height={70}
-          className="object-cover w-full h-full"
-        />
+      <div className="w-16 h-16 overflow-hidden rounded-full">
+        <Image src={favorite.image} alt="logo" width={70} height={70} className="object-cover w-full h-full" />
       </div>
       <div className="flex flex-col">
         <span className="pl-4 font-semibold ">{favorite.title}</span>
@@ -31,7 +25,7 @@ const FavoriteCard = ({ favorite, OpenModal }: Props) => {
         </p>
       </div>
       <button className="p-2 rounded-full bg-slate-200 hover:bg-green-200 hover:text-green-500" onClick={OpenModal}>
-      <FaCartArrowDown className=" text-green-600" size={28} />
+        <FaCartArrowDown className=" text-green-600" size={28} />
       </button>
     </div>
   );

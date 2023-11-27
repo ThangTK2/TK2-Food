@@ -10,7 +10,6 @@ import FavoriteCard from "./FavoriteCard";
 // import { useCartStore } from "@/lib/store";
 // import toast from "react-hot-toast";
 
-
 type Props = {
   favorite: Menu;
   user: User
@@ -48,7 +47,7 @@ const FavoriteModal = ({ favorite, user }: Props) => {
             src={favorite.image} alt="chefy" width={360} height={200}
             className="h-56 w-full object-cover rounded-t-lg "
           />
-         <div className="absolute -top-[10px] -left-[15px] w-12 h-12 rounded-full bg-white">
+          <div className="absolute -top-[10px] w-12 h-12 rounded-full bg-white">
             <FavoritesBtn />
           </div>
         </div>

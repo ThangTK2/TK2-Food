@@ -31,7 +31,7 @@ const UserDetails = ({ user }: Props) => {
         <h1 className="text-xl text-center my-5 font-semibold leading-tight tracking-tight text-gray-500 md:text-2xl ">
           TK2
         </h1>
-        <p className="text-gray-500 mb-4">a@gmail.com</p>
+        <p className="text-gray-500 mb-4 flex items-center justify-center">tk2@gmail.com</p>
         {/* {profile ? (
         <UserEditAccountModal user={user as User} profile={profile} />
         ) : (
