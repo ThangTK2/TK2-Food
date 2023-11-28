@@ -1,10 +1,10 @@
 "use client";
 import { HiOutlineSearch, HiOutlineUpload } from "react-icons/hi";
 import { usePathname } from "next/navigation";
-// import OrdersFilter from "../orders/OrdersFilter";
-// import AdminAddMenu from "../menu/AdminAddMenu";
-// import PriceDropDown from "../menu/PriceDropDown";
-// import CategoryDropDown from "../menu/CategoryDropDown";
+import OrdersFilter from "../orders/OrdersFilter";
+import AdminAddMenu from "../menu/AdminAddMenu";
+import PriceDropDown from "../menu/PriceDropDown";
+import CategoryDropDown from "../menu/CategoryDropDown";
 
 const SearchAndFilter = () => {
   const pathname = usePathname();
@@ -13,7 +13,7 @@ const SearchAndFilter = () => {
       <div className="w-full md:w-1/2">
         <form className="flex items-center">
           <label htmlFor="simple-search" className="sr-only">
-            Search...
+            Search
           </label>
           <div className="relative w-full ">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -22,10 +22,8 @@ const SearchAndFilter = () => {
                 className="w-5 h-5 text-gray-500 "
               />
             </div>
-            <input
-              type="text"
-              className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg  block w-full pl-10 p-2"
-              placeholder="Search"
+            <input className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg  block w-full pl-10 p-2"
+              type="text" placeholder="Search..."
             />
           </div>
         </form>
@@ -34,7 +32,7 @@ const SearchAndFilter = () => {
         {pathname === "/dashboard/menu" && (
           <>
             <div className="flex items-center space-x-3 w-full md:w-auto">
-              {/* <AdminAddMenu /> */}
+              <AdminAddMenu />
             </div>
             <div className="flex items-center space-x-3 w-full md:w-auto">
               <button
@@ -46,11 +44,11 @@ const SearchAndFilter = () => {
               </button>
             </div>
             <div className="flex items-center space-x-3 w-full md:w-auto">
-          {/* <PriceDropDown /> */}
-        </div>
-        <div className="flex items-center space-x-3 w-full md:w-auto">
-          {/* <CategoryDropDown /> */}
-        </div>
+              <PriceDropDown />
+            </div>
+            <div className="flex items-center space-x-3 w-full md:w-auto">
+              <CategoryDropDown />
+            </div>
           </>
         )}
 
@@ -73,7 +71,7 @@ const SearchAndFilter = () => {
         {pathname === "/dashboard/orders" && (
           <>
             <div className="flex items-center space-x-3 w-full md:w-auto">
-              {/* <OrdersFilter /> */}
+              <OrdersFilter />
             </div>
           </>
         )}
